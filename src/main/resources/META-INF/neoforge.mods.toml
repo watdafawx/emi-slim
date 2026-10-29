@@ -1,0 +1,31 @@
+modLoader = "javafml"
+loaderVersion = "[4,)"
+license = "MIT"
+
+[[mods]]
+modId = "${mod_id}"
+version = "${mod_version}"
+displayName = "${mod_name}"
+authors = "mtop"
+description = '''
+Cuts EMI's memory use by sharing duplicated item data: one stack list per tag instead of a fresh
+copy for every tag ingredient, and one shared copy of identical item component data.
+Client only. Turn parts off with -Demislim.shareTags=false / -Demislim.internPatches=false.
+'''
+
+[[mixins]]
+config = "emislim.mixins.json"
+
+[[dependencies.${mod_id}]]
+modId = "neoforge"
+type = "required"
+versionRange = "[21.1.0,)"
+ordering = "NONE"
+side = "CLIENT"
+
+[[dependencies.${mod_id}]]
+modId = "emi"
+type = "required"
+versionRange = "[1.1.24,)"
+ordering = "AFTER"
+side = "CLIENT"

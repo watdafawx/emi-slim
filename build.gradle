@@ -1,0 +1,56 @@
+plugins {
+    id 'java'
+    id 'net.neoforged.moddev' version '2.0.146'
+}
+
+version = mod_version
+group = mod_group_id
+
+base {
+    archivesName = "emi-slim-neoforge-${minecraft_version}"
+}
+
+java {
+    toolchain.languageVersion = JavaLanguageVersion.of(21)
+}
+
+neoForge {
+    version = neo_version
+    runs {
+        // Unattended smoke test: creates a flat world, checks sharing, writes run/emislim-selftest.txt, quits.
+        // EMI must be in run/mods (FML only finds mods there).
+        selftest {
+            client()
+            gameDirectory = file('run')
+            systemProperty 'emislim.selftest', 'auto'
+        }
+    }
+
+    mods {
+        "${mod_id}" {
+            sourceSet sourceSets.main
+        }
+    }
+}
+
+dependencies {
+    // EMI 1.1.24 NeoForge jar (Mojang-mapped), copied from the pack. Compile only.
+    compileOnly files('libs/emi-1.1.24+1.21.1+neoforge.jar')
+}
+
+processResources {
+    def props = [mod_id: mod_id, mod_name: mod_name, mod_version: mod_version]
+    inputs.properties props
+    filesMatching(['META-INF/neoforge.mods.toml']) {
+        expand props
+    }
+}
+
+// Dev-only test harness stays out of the shipped jar.
+jar {
+    exclude 'dev/mtop/emislim/selftest/**'
+}
+
+tasks.withType(JavaCompile).configureEach {
+    options.encoding = 'UTF-8'
+}

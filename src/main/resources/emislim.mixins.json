@@ -1,0 +1,19 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "dev.mtop.emislim.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [],
+  "client": [
+    "EmiRecipesMixin",
+    "EmiStackListMixin",
+    "EmiStackMixin",
+    "EmiTagsMixin",
+    "ItemEmiStackMixin",
+    "ListEmiIngredientMixin",
+    "TagEmiIngredientMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
