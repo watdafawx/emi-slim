@@ -7,7 +7,7 @@ version = mod_version
 group = mod_group_id
 
 base {
-    archivesName = "emi-slim-neoforge-${minecraft_version}"
+    archivesName = mod_id
 }
 
 java {
@@ -44,6 +44,11 @@ processResources {
     filesMatching(['META-INF/neoforge.mods.toml']) {
         expand props
     }
+}
+
+// Hopper release naming: <modid>-<version>+neoforge-<mc>.jar (project.version stays plain).
+tasks.withType(Jar).configureEach {
+    archiveVersion = "${project.version}+neoforge-${minecraft_version}"
 }
 
 // Dev-only test harness stays out of the shipped jar.

@@ -6,6 +6,7 @@ license = "MIT"
 modId = "${mod_id}"
 version = "${mod_version}"
 displayName = "${mod_name}"
+logoFile = "emislim.png"
 authors = "mtop"
 description = '''
 Cuts EMI's memory use by sharing duplicated item data: one stack list per tag instead of a fresh
@@ -22,6 +23,13 @@ type = "required"
 versionRange = "[21.1.0,)"
 ordering = "NONE"
 side = "CLIENT"
+
+[[dependencies.${mod_id}]]
+modId = "minecraft"
+type = "required"
+versionRange = "[1.21.1,1.22)"
+ordering = "NONE"
+side = "BOTH"
 
 [[dependencies.${mod_id}]]
 modId = "emi"
