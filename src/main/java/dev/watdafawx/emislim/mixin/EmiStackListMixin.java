@@ -1,8 +1,8 @@
-package dev.mtop.emislim.mixin;
+package dev.watdafawx.emislim.mixin;
 
 import dev.emi.emi.registry.EmiStackList;
-import dev.mtop.emislim.PatchInterner;
-import dev.mtop.emislim.TagShare;
+import dev.watdafawx.emislim.PatchInterner;
+import dev.watdafawx.emislim.TagShare;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;

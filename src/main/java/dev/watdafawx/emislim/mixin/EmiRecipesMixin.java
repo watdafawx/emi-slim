@@ -1,7 +1,7 @@
-package dev.mtop.emislim.mixin;
+package dev.watdafawx.emislim.mixin;
 
 import dev.emi.emi.registry.EmiRecipes;
-import dev.mtop.emislim.EmiSlim;
+import dev.watdafawx.emislim.EmiSlim;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;

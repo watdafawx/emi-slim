@@ -1,4 +1,4 @@
-package dev.mtop.emislim;
+package dev.watdafawx.emislim;
 
 import net.neoforged.api.distmarker.Dist;
 import net.neoforged.fml.common.Mod;

@@ -1,11 +1,11 @@
-package dev.mtop.emislim.mixin;
+package dev.watdafawx.emislim.mixin;
 
 import dev.emi.emi.api.stack.EmiIngredient;
 import dev.emi.emi.api.stack.EmiStack;
 import dev.emi.emi.api.stack.ListEmiIngredient;
 import dev.emi.emi.api.stack.TagEmiIngredient;
-import dev.mtop.emislim.ListOwner;
-import dev.mtop.emislim.TagShare;
+import dev.watdafawx.emislim.ListOwner;
+import dev.watdafawx.emislim.TagShare;
 import org.spongepowered.asm.mixin.Final;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Mutable;

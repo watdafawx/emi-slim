@@ -1,7 +1,7 @@
-package dev.mtop.emislim.mixin;
+package dev.watdafawx.emislim.mixin;
 
 import dev.emi.emi.api.stack.ItemEmiStack;
-import dev.mtop.emislim.PatchInterner;
+import dev.watdafawx.emislim.PatchInterner;
 import net.minecraft.core.component.DataComponentPatch;
 import org.spongepowered.asm.mixin.Final;
 import org.spongepowered.asm.mixin.Mixin;

@@ -1,4 +1,4 @@
-package dev.mtop.emislim;
+package dev.watdafawx.emislim;
 
 import com.google.common.collect.Interner;
 import com.google.common.collect.Interners;

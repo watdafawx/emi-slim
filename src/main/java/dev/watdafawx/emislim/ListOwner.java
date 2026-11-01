@@ -1,4 +1,4 @@
-package dev.mtop.emislim;
+package dev.watdafawx.emislim;
 
 import dev.emi.emi.api.stack.EmiIngredient;
 

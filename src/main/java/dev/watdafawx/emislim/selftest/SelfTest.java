@@ -1,4 +1,4 @@
-package dev.mtop.emislim.selftest;
+package dev.watdafawx.emislim.selftest;
 
 import dev.emi.emi.api.EmiApi;
 import dev.emi.emi.api.recipe.EmiRecipe;
@@ -8,8 +8,8 @@ import dev.emi.emi.api.stack.ItemEmiStack;
 import dev.emi.emi.api.stack.ListEmiIngredient;
 import dev.emi.emi.api.stack.TagEmiIngredient;
 import dev.emi.emi.runtime.EmiReloadManager;
-import dev.mtop.emislim.EmiSlim;
-import dev.mtop.emislim.SharedTagList;
+import dev.watdafawx.emislim.EmiSlim;
+import dev.watdafawx.emislim.SharedTagList;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.screens.TitleScreen;
 import net.minecraft.client.gui.screens.AccessibilityOnboardingScreen;

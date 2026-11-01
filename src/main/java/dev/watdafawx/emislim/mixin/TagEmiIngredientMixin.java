@@ -1,9 +1,9 @@
-package dev.mtop.emislim.mixin;
+package dev.watdafawx.emislim.mixin;
 
 import dev.emi.emi.api.stack.EmiStack;
 import dev.emi.emi.api.stack.TagEmiIngredient;
-import dev.mtop.emislim.TagOwner;
-import dev.mtop.emislim.TagShare;
+import dev.watdafawx.emislim.TagOwner;
+import dev.watdafawx.emislim.TagShare;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Shadow;
 import org.spongepowered.asm.mixin.injection.At;

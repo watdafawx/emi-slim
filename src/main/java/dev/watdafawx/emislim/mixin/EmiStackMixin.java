@@ -1,10 +1,10 @@
-package dev.mtop.emislim.mixin;
+package dev.watdafawx.emislim.mixin;
 
 import dev.emi.emi.api.stack.Comparison;
 import dev.emi.emi.api.stack.EmiStack;
-import dev.mtop.emislim.SharedStack;
-import dev.mtop.emislim.SharedTagList;
-import dev.mtop.emislim.TagShare;
+import dev.watdafawx.emislim.SharedStack;
+import dev.watdafawx.emislim.SharedTagList;
+import dev.watdafawx.emislim.TagShare;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Shadow;
 import org.spongepowered.asm.mixin.Unique;
