@@ -33,9 +33,13 @@ neoForge {
     }
 }
 
+repositories {
+    maven { url "https://maven.terraformersmc.com/releases/" }
+}
+
 dependencies {
-    // EMI 1.1.24 NeoForge jar (Mojang-mapped), copied from the pack. Compile only.
-    compileOnly files('libs/emi-1.1.24+1.21.1+neoforge.jar')
+    // EMI 1.1.24 NeoForge (Mojang-mapped). Compile only.
+    compileOnly "dev.emi:emi-neoforge:1.1.24+1.21.1"
 }
 
 processResources {
